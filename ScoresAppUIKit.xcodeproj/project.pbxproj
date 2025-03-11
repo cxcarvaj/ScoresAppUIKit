@@ -6,30 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB8DB3552D7F6A480093DFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */; };
+		FB8DB3572D7F6A480093DFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34F2D7F6A480093DFCB /* LaunchScreen.storyboard */; };
+		FB8DB3582D7F6A480093DFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB3512D7F6A480093DFCB /* Main.storyboard */; };
+		FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */; };
+		FB8DB35A2D7F6A480093DFCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3522D7F6A480093DFCB /* SceneDelegate.swift */; };
+		FB8DB35F2D7F6B1B0093DFCB /* scoresdata.json in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB35E2D7F6B1B0093DFCB /* scoresdata.json */; };
+		FB8DB3622D7F6D070093DFCB /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3612D7F6D070093DFCB /* Score.swift */; };
+		FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3642D7F6E6B0093DFCB /* DataRepository.swift */; };
+		FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3662D7F6E900093DFCB /* JSONLoader.swift */; };
+		FB8DB36A2D7F70270093DFCB /* scoresdatatest.json in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB3692D7F70270093DFCB /* scoresdatatest.json */; };
+		FB8DB36D2D7F71190093DFCB /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB36C2D7F71190093DFCB /* RepositoryTest.swift */; };
+		FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB36F2D7F72130093DFCB /* ModelLogic.swift */; };
+		FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */; };
+		FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB8DB3332D7F6A370093DFCB /* ScoresAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoresAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB8DB34D2D7F6A480093DFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8DB34E2D7F6A480093DFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB8DB3502D7F6A480093DFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB8DB3522D7F6A480093DFCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB8DB35E2D7F6B1B0093DFCB /* scoresdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoresdata.json; sourceTree = "<group>"; };
+		FB8DB3612D7F6D070093DFCB /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FB8DB3642D7F6E6B0093DFCB /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		FB8DB3662D7F6E900093DFCB /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		FB8DB3692D7F70270093DFCB /* scoresdatatest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoresdatatest.json; sourceTree = "<group>"; };
+		FB8DB36C2D7F71190093DFCB /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		FB8DB36F2D7F72130093DFCB /* ModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLogic.swift; sourceTree = "<group>"; };
+		FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewControllerD.swift; sourceTree = "<group>"; };
+		FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FB8DB3452D7F6A400093DFCB /* Exceptions for "ScoresAppUIKit" folder in "ScoresAppUIKit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FB8DB3322D7F6A370093DFCB /* ScoresAppUIKit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FB8DB3352D7F6A370093DFCB /* ScoresAppUIKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FB8DB3452D7F6A400093DFCB /* Exceptions for "ScoresAppUIKit" folder in "ScoresAppUIKit" target */,
-			);
-			path = ScoresAppUIKit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB8DB3302D7F6A370093DFCB /* Frameworks */ = {
@@ -45,7 +56,7 @@
 		FB8DB32A2D7F6A370093DFCB = {
 			isa = PBXGroup;
 			children = (
-				FB8DB3352D7F6A370093DFCB /* ScoresAppUIKit */,
+				FB8DB3542D7F6A480093DFCB /* ScoresAppUIKit */,
 				FB8DB3342D7F6A370093DFCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +67,84 @@
 				FB8DB3332D7F6A370093DFCB /* ScoresAppUIKit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FB8DB3542D7F6A480093DFCB /* ScoresAppUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
+				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
+				FB8DB36E2D7F71AD0093DFCB /* Logic */,
+				FB8DB3632D7F6E520093DFCB /* Repository */,
+				FB8DB3602D7F6B5B0093DFCB /* Model */,
+				FB8DB35D2D7F6AF80093DFCB /* Resources */,
+				FB8DB35C2D7F6A4B0093DFCB /* System */,
+				FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */,
+				FB8DB34D2D7F6A480093DFCB /* Info.plist */,
+				FB8DB34F2D7F6A480093DFCB /* LaunchScreen.storyboard */,
+				FB8DB36B2D7F71040093DFCB /* Test */,
+				FB8DB3682D7F6FD90093DFCB /* Preview Data */,
+			);
+			path = ScoresAppUIKit;
+			sourceTree = "<group>";
+		};
+		FB8DB35C2D7F6A4B0093DFCB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */,
+				FB8DB3522D7F6A480093DFCB /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		FB8DB35D2D7F6AF80093DFCB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB35E2D7F6B1B0093DFCB /* scoresdata.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB8DB3602D7F6B5B0093DFCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3612D7F6D070093DFCB /* Score.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB8DB3632D7F6E520093DFCB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3642D7F6E6B0093DFCB /* DataRepository.swift */,
+				FB8DB3662D7F6E900093DFCB /* JSONLoader.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FB8DB3682D7F6FD90093DFCB /* Preview Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3692D7F70270093DFCB /* scoresdatatest.json */,
+			);
+			path = "Preview Data";
+			sourceTree = "<group>";
+		};
+		FB8DB36B2D7F71040093DFCB /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB36C2D7F71190093DFCB /* RepositoryTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FB8DB36E2D7F71AD0093DFCB /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB36F2D7F72130093DFCB /* ModelLogic.swift */,
+				FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +161,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FB8DB3352D7F6A370093DFCB /* ScoresAppUIKit */,
 			);
 			name = ScoresAppUIKit;
 			packageProductDependencies = (
@@ -122,6 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8DB35F2D7F6B1B0093DFCB /* scoresdata.json in Resources */,
+				FB8DB3552D7F6A480093DFCB /* Assets.xcassets in Resources */,
+				FB8DB3572D7F6A480093DFCB /* LaunchScreen.storyboard in Resources */,
+				FB8DB36A2D7F70270093DFCB /* scoresdatatest.json in Resources */,
+				FB8DB3582D7F6A480093DFCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +223,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */,
+				FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */,
+				FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */,
+				FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */,
+				FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */,
+				FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */,
+				FB8DB3622D7F6D070093DFCB /* Score.swift in Sources */,
+				FB8DB35A2D7F6A480093DFCB /* SceneDelegate.swift in Sources */,
+				FB8DB36D2D7F71190093DFCB /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB8DB34F2D7F6A480093DFCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8DB34E2D7F6A480093DFCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB8DB3512D7F6A480093DFCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8DB3502D7F6A480093DFCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FB8DB3472D7F6A400093DFCB /* Debug */ = {
@@ -145,9 +264,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresAppUIKit/Preview\\ Data";
 				DEVELOPMENT_TEAM = 7GRZBU3W5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScoresAppUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scores;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -160,8 +282,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.ScoresAppUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -173,9 +299,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresAppUIKit/Preview\\ Data";
 				DEVELOPMENT_TEAM = 7GRZBU3W5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScoresAppUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scores;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -188,8 +317,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.ScoresAppUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
