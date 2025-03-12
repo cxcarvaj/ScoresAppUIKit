@@ -6,3 +6,6 @@
 //
 
 import Foundation
+extension Notification.Name {
+    static let reloadTable = Notification.Name("RELOADTABLE")
+}

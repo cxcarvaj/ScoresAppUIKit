@@ -16,6 +16,8 @@ struct RepositoryTest: DataRepository {
     var urlDoc: URL {
         URL.documentsDirectory.appending(path: "scoresdatatest").appendingPathExtension(for: .json)
     }
+    
+    func saveScores(_ scores: [Score]) throws {}
 }
 
 

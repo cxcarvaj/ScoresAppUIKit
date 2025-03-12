@@ -21,6 +21,8 @@
 		FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB36F2D7F72130093DFCB /* ModelLogic.swift */; };
 		FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */; };
 		FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */; };
+		FB8DB3772D81DDDB0093DFCB /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3762D81DDDB0093DFCB /* Notifications.swift */; };
+		FB8DB3792D81EFC00093DFCB /* ScoreDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		FB8DB36F2D7F72130093DFCB /* ModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLogic.swift; sourceTree = "<group>"; };
 		FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewControllerD.swift; sourceTree = "<group>"; };
 		FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationLogic.swift; sourceTree = "<group>"; };
+		FB8DB3762D81DDDB0093DFCB /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +78,12 @@
 			children = (
 				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
 				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
+				FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */,
 				FB8DB36E2D7F71AD0093DFCB /* Logic */,
 				FB8DB3632D7F6E520093DFCB /* Repository */,
 				FB8DB3602D7F6B5B0093DFCB /* Model */,
 				FB8DB35D2D7F6AF80093DFCB /* Resources */,
+				FB8DB3752D81DDBD0093DFCB /* Extensions */,
 				FB8DB35C2D7F6A4B0093DFCB /* System */,
 				FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */,
 				FB8DB34D2D7F6A480093DFCB /* Info.plist */,
@@ -145,6 +151,14 @@
 				FB8DB3732D7F934E0093DFCB /* PresentationLogic.swift */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		FB8DB3752D81DDBD0093DFCB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3762D81DDDB0093DFCB /* Notifications.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,11 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8DB3772D81DDDB0093DFCB /* Notifications.swift in Sources */,
 				FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */,
 				FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */,
 				FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */,
 				FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */,
 				FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */,
+				FB8DB3792D81EFC00093DFCB /* ScoreDetailTableViewController.swift in Sources */,
 				FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */,
 				FB8DB3622D7F6D070093DFCB /* Score.swift in Sources */,
 				FB8DB35A2D7F6A480093DFCB /* SceneDelegate.swift in Sources */,

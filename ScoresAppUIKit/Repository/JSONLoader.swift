@@ -14,4 +14,10 @@ extension JSONLoader {
         let data = try Data(contentsOf: url)
         return try JSONDecoder().decode(type, from: data)
     }
+    
+    func save<T>(url: URL, data: T) throws where T: Codable {
+        let jsonData = try JSONEncoder().encode(data)
+        //.atomic es necesario para evitar data races al momento de escritura en el archivo
+        try jsonData.write(to: url, options: [.atomic, .completeFileProtection])
+    }
 }

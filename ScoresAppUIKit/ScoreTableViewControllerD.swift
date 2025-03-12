@@ -7,16 +7,29 @@
 
 import UIKit
 
-class ScoreTableViewControllerD: UITableViewController {
+final class ScoreTableViewControllerD: UITableViewController {
     
     var logic = ModelLogic.shared
     let presentation = PresentationLogic.shared
 
+    @IBOutlet weak var orderByButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.clearsSelectionOnViewWillAppear = false
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = editButtonItem
+        
+        orderByButton.menu = presentation.getMenuOrderBy()
+        configureSearchBar()
+        
+        NotificationCenter.default.addObserver(forName: .reloadTable,
+                                               object: nil,
+                                               queue: .main) { _ in
+            Task { @MainActor in
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -35,8 +48,10 @@ class ScoreTableViewControllerD: UITableViewController {
         
         let score = logic.scoreForRowAt(indexPath)
         
-        cell.contentConfiguration = presentation.getListSubtitleCellConfiguration(text: score.title,secondaryText: score.composer,
-                                                                     image:score.cover)
+        cell.contentConfiguration = presentation.getListSubtitleCellConfiguration(
+            text: score.title,
+            secondaryText: score.composer,
+            image: score.cover)
         
         return cell
     }
@@ -47,48 +62,69 @@ class ScoreTableViewControllerD: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+         true
     }
 
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            logic.deleteScoreAt(indexPath)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
 //        else if editingStyle == .insert {
 //            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
 //        }    
     }
-
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-    */
+     */
 
-    /*
+
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+        true
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBSegueAction func goToDetails(_ coder: NSCoder) -> ScoreDetailTableViewController? {
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else { return nil }
+        let score = logic.scoreForRowAt(indexPath)
+        let detail = ScoreDetailTableViewController(coder: coder)
+        
+        detail?.score = score
+        return detail
     }
-    */
+    
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .reloadTable,
+                                                  object: nil)
+    }
 
 }
 
 @available(iOS 17.0, *)
 #Preview {
     ScoreTableViewControllerD.preview
+}
+
+extension ScoreTableViewControllerD: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        logic.searchTerm = searchController.searchBar.text ?? ""
+    }
+    
+    
+    
+    
+    func configureSearchBar() {
+        let search = UISearchController(searchResultsController: nil)
+        search.searchBar.placeholder = "Enter a score name"
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchResultsUpdater = self
+        navigationItem.searchController = search
+    }
 }

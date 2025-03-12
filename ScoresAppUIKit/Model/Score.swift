@@ -16,3 +16,13 @@ struct Score: Codable {
     let cover: String
     let tracks: [String]
 }
+
+extension Score {
+    var lengthS: String {
+        length.formatted(.number.precision(.integerAndFractionLength(integer: 3, fraction: 1)))
+    }
+    
+    var yearS: String {
+        year.formatted(.number.precision(.integerLength(4)))
+    }
+}

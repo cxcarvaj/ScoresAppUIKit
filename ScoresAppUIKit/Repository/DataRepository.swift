@@ -9,9 +9,12 @@ import Foundation
 
 struct Repository: DataRepository {}
 
-protocol DataRepository: JSONLoader {
+protocol DataRepository: JSONLoader, Sendable {
     var url: URL { get }
+    var urlDoc: URL { get }
+    
     func getScores() throws -> [Score]
+    func saveScores(_ scores: [Score]) throws
 }
 
 extension DataRepository {
@@ -20,7 +23,19 @@ extension DataRepository {
                         withExtension: "json")!
     }
     
+    var urlDoc: URL {
+        URL.documentsDirectory.appending(path: "scoredata").appendingPathExtension(for: .json)
+    }
+    
     func getScores() throws -> [Score] {
-        try load(url: url, type: [Score].self)
+        if FileManager.default.fileExists(atPath: urlDoc.path()) {
+            try load(url: urlDoc, type: [Score].self)
+        } else {
+            try load(url: url, type: [Score].self)
+        }
+    }
+    
+    func saveScores(_ scores: [Score]) throws {
+        try save(url: urlDoc, data: scores)
     }
 }
