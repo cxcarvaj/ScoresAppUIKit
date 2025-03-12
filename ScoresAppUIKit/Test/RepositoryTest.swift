@@ -12,6 +12,10 @@ struct RepositoryTest: DataRepository {
         Bundle.main.url(forResource: "scoresdatatest",
                         withExtension: "json")!
     }
+    
+    var urlDoc: URL {
+        URL.documentsDirectory.appending(path: "scoresdatatest").appendingPathExtension(for: .json)
+    }
 }
 
 
@@ -20,9 +24,14 @@ extension ScoreTableViewControllerD {
     // Por eso aqui creamos el Storyboard
     static var preview: UINavigationController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nc = storyboard.instantiateInitialViewController() as! UINavigationController
+        //Sin Storyboard ID
+//        let nc = storyboard.instantiateInitialViewController() as! UINavigationController
+//        
+//        let vc = nc.viewControllers.first as! ScoreTableViewControllerD
         
-        let vc = nc.viewControllers.first as! ScoreTableViewControllerD
+        //Con Storyboard ID
+        let vc = storyboard.instantiateViewController(withIdentifier: "ScoreTableViewControllerD") as! ScoreTableViewControllerD
+
         
         vc.logic = ModelLogic.test
         

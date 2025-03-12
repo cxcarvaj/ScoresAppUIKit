@@ -10,7 +10,7 @@ import UIKit
 struct PresentationLogic {
     static let shared = PresentationLogic()
     
-    func getListSubtitleCell(text: String, secondaryText: String, image: String) -> UIListContentConfiguration {
+    func getListSubtitleCellConfiguration(text: String, secondaryText: String, image: String) -> UIListContentConfiguration {
         
         var configuration = UIListContentConfiguration.subtitleCell()
         configuration.text = text
