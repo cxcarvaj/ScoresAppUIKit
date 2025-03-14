@@ -31,7 +31,7 @@ extension DataRepository {
         if FileManager.default.fileExists(atPath: urlDoc.path()) {
             try load(url: urlDoc, type: [Score].self)
         } else {
-            try load(url: url, type: [Score].self)
+            try load(url: url, type: [ScoreDTO].self).map(\.toScore)
         }
     }
     

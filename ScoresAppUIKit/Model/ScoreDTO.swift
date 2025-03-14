@@ -7,6 +7,27 @@
 
 import Foundation
 
+struct ScoreDTO: Codable {
+    let id: Int
+    let title: String
+    let composer: String
+    let year: Int
+    let length: Double
+    let cover: String
+    let tracks: [String]
+    
+    var toScore: Score {
+        Score(id: id,
+              title: title,
+              composer: composer,
+              year: year,
+              length: length,
+              cover: cover,
+              tracks: tracks,
+              favorited: false)
+    }
+}
+
 struct Score: Codable {
     let id: Int
     let title: String
@@ -15,6 +36,7 @@ struct Score: Codable {
     let length: Double
     let cover: String
     let tracks: [String]
+    var favorited: Bool
 }
 
 extension Score {

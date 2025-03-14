@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5D773B2D8320D900812FAC /* TracksTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D773A2D8320D900812FAC /* TracksTableView.swift */; };
+		FB5D773D2D83429600812FAC /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D773C2D83429600812FAC /* NumberFormatter.swift */; };
+		FB72821D2D83B5290041E9A2 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */; };
+		FB72821F2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */; };
 		FB8DB3552D7F6A480093DFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */; };
 		FB8DB3572D7F6A480093DFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34F2D7F6A480093DFCB /* LaunchScreen.storyboard */; };
 		FB8DB3582D7F6A480093DFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB3512D7F6A480093DFCB /* Main.storyboard */; };
 		FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */; };
 		FB8DB35A2D7F6A480093DFCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3522D7F6A480093DFCB /* SceneDelegate.swift */; };
 		FB8DB35F2D7F6B1B0093DFCB /* scoresdata.json in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB35E2D7F6B1B0093DFCB /* scoresdata.json */; };
-		FB8DB3622D7F6D070093DFCB /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3612D7F6D070093DFCB /* Score.swift */; };
+		FB8DB3622D7F6D070093DFCB /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3612D7F6D070093DFCB /* ScoreDTO.swift */; };
 		FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3642D7F6E6B0093DFCB /* DataRepository.swift */; };
 		FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DB3662D7F6E900093DFCB /* JSONLoader.swift */; };
 		FB8DB36A2D7F70270093DFCB /* scoresdatatest.json in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB3692D7F70270093DFCB /* scoresdatatest.json */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB5D773A2D8320D900812FAC /* TracksTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableView.swift; sourceTree = "<group>"; };
+		FB5D773C2D83429600812FAC /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
+		FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB8DB3332D7F6A370093DFCB /* ScoresAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoresAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,7 +42,7 @@
 		FB8DB3502D7F6A480093DFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB8DB3522D7F6A480093DFCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB8DB35E2D7F6B1B0093DFCB /* scoresdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoresdata.json; sourceTree = "<group>"; };
-		FB8DB3612D7F6D070093DFCB /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FB8DB3612D7F6D070093DFCB /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
 		FB8DB3642D7F6E6B0093DFCB /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		FB8DB3662D7F6E900093DFCB /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		FB8DB3692D7F70270093DFCB /* scoresdatatest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scoresdatatest.json; sourceTree = "<group>"; };
@@ -79,6 +87,9 @@
 				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
 				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
 				FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */,
+				FB5D773A2D8320D900812FAC /* TracksTableView.swift */,
+				FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */,
+				FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */,
 				FB8DB36E2D7F71AD0093DFCB /* Logic */,
 				FB8DB3632D7F6E520093DFCB /* Repository */,
 				FB8DB3602D7F6B5B0093DFCB /* Model */,
@@ -114,7 +125,7 @@
 		FB8DB3602D7F6B5B0093DFCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB8DB3612D7F6D070093DFCB /* Score.swift */,
+				FB8DB3612D7F6D070093DFCB /* ScoreDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8DB3762D81DDDB0093DFCB /* Notifications.swift */,
+				FB5D773C2D83429600812FAC /* NumberFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,15 +249,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB72821D2D83B5290041E9A2 /* FavoritesCollectionViewController.swift in Sources */,
 				FB8DB3772D81DDDB0093DFCB /* Notifications.swift in Sources */,
 				FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */,
 				FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */,
+				FB5D773B2D8320D900812FAC /* TracksTableView.swift in Sources */,
 				FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */,
 				FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */,
 				FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */,
+				FB72821F2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift in Sources */,
 				FB8DB3792D81EFC00093DFCB /* ScoreDetailTableViewController.swift in Sources */,
 				FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */,
-				FB8DB3622D7F6D070093DFCB /* Score.swift in Sources */,
+				FB8DB3622D7F6D070093DFCB /* ScoreDTO.swift in Sources */,
+				FB5D773D2D83429600812FAC /* NumberFormatter.swift in Sources */,
 				FB8DB35A2D7F6A480093DFCB /* SceneDelegate.swift in Sources */,
 				FB8DB36D2D7F71190093DFCB /* RepositoryTest.swift in Sources */,
 			);

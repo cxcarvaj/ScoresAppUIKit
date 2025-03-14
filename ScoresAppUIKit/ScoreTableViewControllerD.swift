@@ -75,17 +75,30 @@ final class ScoreTableViewControllerD: UITableViewController {
 //            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
 //        }    
     }
-    /*
+
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-     */
 
 
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         true
+    }
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let score = logic.scoreForRowAt(indexPath)
+        let isFavorited = score.favorited
+        let action = UIContextualAction(style: .normal,
+                                        title: isFavorited ? "Unfavorited" : "Favorite") {[unowned self] _, _, result in
+            
+            logic.toggleFavorite(id: score.id)
+            result(true)
+        }
+        action.image = UIImage(systemName: isFavorited ? "star" : "star.fill")
+        action.backgroundColor = isFavorited ? .gray : .systemBlue
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
     @IBSegueAction func goToDetails(_ coder: NSCoder) -> ScoreDetailTableViewController? {
@@ -104,6 +117,15 @@ final class ScoreTableViewControllerD: UITableViewController {
                                                   name: .reloadTable,
                                                   object: nil)
     }
+    
+    @IBAction func exitDetail(segue: UIStoryboardSegue) {
+        guard let source = segue.source as? ScoreDetailTableViewController,
+              let score = source.score,
+              let indexPath = logic.getIndexPathForScore(score)
+        else { return }
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
 
 }
 
@@ -117,14 +139,8 @@ extension ScoreTableViewControllerD: UISearchResultsUpdating {
         logic.searchTerm = searchController.searchBar.text ?? ""
     }
     
-    
-    
-    
     func configureSearchBar() {
-        let search = UISearchController(searchResultsController: nil)
-        search.searchBar.placeholder = "Enter a score name"
-        search.obscuresBackgroundDuringPresentation = false
-        search.searchResultsUpdater = self
-        navigationItem.searchController = search
+        navigationItem.searchController = presentation.getNewSearchController(placeholder: "Enter the score name")
+        navigationItem.searchController?.searchResultsUpdater = self
     }
 }

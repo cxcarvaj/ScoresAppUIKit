@@ -40,6 +40,19 @@ final class ModelLogic {
         }
     }
     
+    var composers: [String] {
+        Set(scores.map(\.composer)).sorted()
+    }
+    
+    
+    var favorites: [Score] {
+        scores.filter { $0.favorited }
+    }
+    
+    var favoritesCount: Int {
+        favorites.count
+    }
+    
     private var scoresByComposers: [[Score]] {
         let groupedScores = groupScoresByComposer()
         let sortedScores = sortGroupedScores(groupedScores)
@@ -120,6 +133,46 @@ final class ModelLogic {
         }
     }
     
+    func updateScore(score: Score?, title: String?, composer: String, year: String?, length: String?) {
+        guard let score,
+              let title,
+              let year,
+              let yearValue = NumberFormatter.toNumberFormatter.number(from: year)?.intValue,
+              let length,
+              let lengthValue = NumberFormatter.toNumberFormatter.number(from: length)?.doubleValue else { return }
+        
+        let newScore = Score(id: score.id,
+                             title: title,
+                             composer: composer,
+                             year: yearValue,
+                             length: lengthValue,
+                             cover: score.cover,
+                             tracks: score.tracks,
+                             favorited: score.favorited)
+        
+        if let index = scores.firstIndex(where: { $0.id == newScore.id }) {
+            scores[index] = newScore
+        }
+    }
+    
+    func getIndexPathForScore(_ score: Score) -> IndexPath? {
+        guard let section = scoresByComposers.firstIndex(where: { $0.first?.composer == score.composer }),
+           let row = scoresByComposers[section].firstIndex(where: { $0.id == score.id }) else {
+            return nil
+        }
+        return IndexPath(row: row, section: section)
+    }
+    
+    func toggleFavorite(id: Int) {
+        if let index = scores.firstIndex(where: {$0.id == id}) {
+            scores[index].favorited.toggle()
+            NotificationCenter.default.post(name: .reloadCollection, object: nil)
+        }
+    }
+    
+    func isFavorited(id: Int) -> Bool {
+        scores.first(where: {$0.id == id})?.favorited ?? false
+    }
 }
 
 extension ModelLogic {

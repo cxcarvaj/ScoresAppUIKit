@@ -8,4 +8,6 @@
 import Foundation
 extension Notification.Name {
     static let reloadTable = Notification.Name("RELOADTABLE")
+    static let reloadCollection = Notification.Name("RELOADCOLLECTION")
+    
 }
