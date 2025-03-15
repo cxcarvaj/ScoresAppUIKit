@@ -7,7 +7,11 @@
 
 import UIKit
 
-final class ScoreTableViewControllerD: UITableViewController {
+final class ScoreTableViewControllerD: UITableViewController, UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+            
+    }
+    
     
     var logic = ModelLogic.shared
     let presentation = PresentationLogic.shared
@@ -17,6 +21,7 @@ final class ScoreTableViewControllerD: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.prefetchDataSource = self
         self.clearsSelectionOnViewWillAppear = false
         self.navigationItem.rightBarButtonItem = editButtonItem
         

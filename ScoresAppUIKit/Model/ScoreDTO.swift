@@ -28,7 +28,7 @@ struct ScoreDTO: Codable {
     }
 }
 
-struct Score: Codable {
+struct Score: Codable, Hashable {
     let id: Int
     let title: String
     let composer: String

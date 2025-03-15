@@ -14,9 +14,11 @@ final class FavoritesCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(forName: .reloadCollection,
-                                               object: nil,
-                                               queue: .main) { _ in
+        NotificationCenter
+            .default
+            .addObserver(forName: .reloadCollection,
+                         object: nil,
+                         queue: .main) { _ in
             Task { @MainActor in
                 self.collectionView.reloadData()
             }

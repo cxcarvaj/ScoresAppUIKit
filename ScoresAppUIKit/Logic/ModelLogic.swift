@@ -103,6 +103,14 @@ final class ModelLogic {
         }
     }
     
+    var getComposerSnapshot: NSDiffableDataSourceSnapshot<Int, String> {
+        var snapshot = NSDiffableDataSourceSnapshot<Int, String>()
+        snapshot.appendSections([0])
+        snapshot.appendItems(composers, toSection: 0)
+        
+        return snapshot
+    }
+    
     private init(repository: DataRepository = Repository()) {
         self.repository = repository
         do {
@@ -172,6 +180,33 @@ final class ModelLogic {
     
     func isFavorited(id: Int) -> Bool {
         scores.first(where: {$0.id == id})?.favorited ?? false
+    }
+    
+    func composerSelected(indexPath: IndexPath) -> String {
+        composers[indexPath.row]
+    }
+    
+    func snapshotForComposer(_ composer: String) -> ScoresSnapshot {
+        var snapshot = ScoresSnapshot()
+        snapshot.appendSections([0])
+        
+        let scoresByComposer = getScoresByComposer(composer)
+        
+        snapshot.appendItems(scoresByComposer, toSection: 0)
+        
+        return snapshot
+    }
+    
+    func getScoresByComposer(_ composer: String) -> [Score] {
+        scores.filter { score in
+            score.composer == composer
+        }
+    }
+    
+    func getScoreByComposerWithIndexPath(composer: String?, indexPath: IndexPath) -> Score? {
+        guard let composer else { return nil }
+        
+        return getScoresByComposer(composer)[indexPath.row]
     }
 }
 

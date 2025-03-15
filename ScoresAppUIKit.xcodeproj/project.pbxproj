@@ -11,6 +11,13 @@
 		FB5D773D2D83429600812FAC /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D773C2D83429600812FAC /* NumberFormatter.swift */; };
 		FB72821D2D83B5290041E9A2 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */; };
 		FB72821F2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */; };
+		FB7282212D846F5D0041E9A2 /* MainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7282202D846F5D0041E9A2 /* MainiPad.storyboard */; };
+		FB7282232D8494C40041E9A2 /* ComposerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7282222D8494C40041E9A2 /* ComposerTableViewCell.swift */; };
+		FB7282252D8495A10041E9A2 /* ComposersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7282242D8495A10041E9A2 /* ComposersTableViewController.swift */; };
+		FB7282272D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7282262D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift */; };
+		FB7282292D852EFB0041E9A2 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7282282D852EFB0041E9A2 /* ScoreTableViewCell.swift */; };
+		FB72822B2D85323E0041E9A2 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72822A2D85323E0041E9A2 /* TypeAlias.swift */; };
+		FB72822D2D853ACA0041E9A2 /* ScoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72822C2D853ACA0041E9A2 /* ScoreDetailViewController.swift */; };
 		FB8DB3552D7F6A480093DFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */; };
 		FB8DB3572D7F6A480093DFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB34F2D7F6A480093DFCB /* LaunchScreen.storyboard */; };
 		FB8DB3582D7F6A480093DFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8DB3512D7F6A480093DFCB /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 		FB5D773C2D83429600812FAC /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB7282202D846F5D0041E9A2 /* MainiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainiPad.storyboard; sourceTree = "<group>"; };
+		FB7282222D8494C40041E9A2 /* ComposerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerTableViewCell.swift; sourceTree = "<group>"; };
+		FB7282242D8495A10041E9A2 /* ComposersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposersTableViewController.swift; sourceTree = "<group>"; };
+		FB7282262D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresDiffableTableViewController.swift; sourceTree = "<group>"; };
+		FB7282282D852EFB0041E9A2 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		FB72822A2D85323E0041E9A2 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		FB72822C2D853ACA0041E9A2 /* ScoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailViewController.swift; sourceTree = "<group>"; };
 		FB8DB3332D7F6A370093DFCB /* ScoresAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoresAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8DB34B2D7F6A480093DFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8DB34C2D7F6A480093DFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,11 +99,17 @@
 			isa = PBXGroup;
 			children = (
 				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
+				FB7282202D846F5D0041E9A2 /* MainiPad.storyboard */,
+				FB72822C2D853ACA0041E9A2 /* ScoreDetailViewController.swift */,
+				FB7282262D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift */,
+				FB7282242D8495A10041E9A2 /* ComposersTableViewController.swift */,
+				FB7282222D8494C40041E9A2 /* ComposerTableViewCell.swift */,
 				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
 				FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */,
 				FB5D773A2D8320D900812FAC /* TracksTableView.swift */,
 				FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */,
 				FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */,
+				FB7282282D852EFB0041E9A2 /* ScoreTableViewCell.swift */,
 				FB8DB36E2D7F71AD0093DFCB /* Logic */,
 				FB8DB3632D7F6E520093DFCB /* Repository */,
 				FB8DB3602D7F6B5B0093DFCB /* Model */,
@@ -169,6 +189,7 @@
 			children = (
 				FB8DB3762D81DDDB0093DFCB /* Notifications.swift */,
 				FB5D773C2D83429600812FAC /* NumberFormatter.swift */,
+				FB72822A2D85323E0041E9A2 /* TypeAlias.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB8DB35F2D7F6B1B0093DFCB /* scoresdata.json in Resources */,
+				FB7282212D846F5D0041E9A2 /* MainiPad.storyboard in Resources */,
 				FB8DB3552D7F6A480093DFCB /* Assets.xcassets in Resources */,
 				FB8DB3572D7F6A480093DFCB /* LaunchScreen.storyboard in Resources */,
 				FB8DB36A2D7F70270093DFCB /* scoresdatatest.json in Resources */,
@@ -250,15 +272,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB72821D2D83B5290041E9A2 /* FavoritesCollectionViewController.swift in Sources */,
+				FB7282292D852EFB0041E9A2 /* ScoreTableViewCell.swift in Sources */,
+				FB7282232D8494C40041E9A2 /* ComposerTableViewCell.swift in Sources */,
 				FB8DB3772D81DDDB0093DFCB /* Notifications.swift in Sources */,
 				FB8DB3702D7F72130093DFCB /* ModelLogic.swift in Sources */,
 				FB8DB3722D7F77F60093DFCB /* ScoreTableViewControllerD.swift in Sources */,
+				FB72822D2D853ACA0041E9A2 /* ScoreDetailViewController.swift in Sources */,
 				FB5D773B2D8320D900812FAC /* TracksTableView.swift in Sources */,
+				FB7282252D8495A10041E9A2 /* ComposersTableViewController.swift in Sources */,
 				FB8DB3672D7F6E900093DFCB /* JSONLoader.swift in Sources */,
 				FB8DB3592D7F6A480093DFCB /* AppDelegate.swift in Sources */,
+				FB7282272D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift in Sources */,
 				FB8DB3742D7F934E0093DFCB /* PresentationLogic.swift in Sources */,
 				FB72821F2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift in Sources */,
 				FB8DB3792D81EFC00093DFCB /* ScoreDetailTableViewController.swift in Sources */,
+				FB72822B2D85323E0041E9A2 /* TypeAlias.swift in Sources */,
 				FB8DB3652D7F6E6B0093DFCB /* DataRepository.swift in Sources */,
 				FB8DB3622D7F6D070093DFCB /* ScoreDTO.swift in Sources */,
 				FB5D773D2D83429600812FAC /* NumberFormatter.swift in Sources */,
