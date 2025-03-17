@@ -79,6 +79,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB72822E2D8608A90041E9A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB72822C2D853ACA0041E9A2 /* ScoreDetailViewController.swift */,
+				FB7282262D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift */,
+				FB7282242D8495A10041E9A2 /* ComposersTableViewController.swift */,
+				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
+				FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */,
+				FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB72822F2D8608EC0041E9A2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
+				FB7282202D846F5D0041E9A2 /* MainiPad.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FB7282302D8609120041E9A2 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FB7282222D8494C40041E9A2 /* ComposerTableViewCell.swift */,
+				FB5D773A2D8320D900812FAC /* TracksTableView.swift */,
+				FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */,
+				FB7282282D852EFB0041E9A2 /* ScoreTableViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
 		FB8DB32A2D7F6A370093DFCB = {
 			isa = PBXGroup;
 			children = (
@@ -98,18 +131,9 @@
 		FB8DB3542D7F6A480093DFCB /* ScoresAppUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FB8DB3512D7F6A480093DFCB /* Main.storyboard */,
-				FB7282202D846F5D0041E9A2 /* MainiPad.storyboard */,
-				FB72822C2D853ACA0041E9A2 /* ScoreDetailViewController.swift */,
-				FB7282262D84A4A00041E9A2 /* ScoresDiffableTableViewController.swift */,
-				FB7282242D8495A10041E9A2 /* ComposersTableViewController.swift */,
-				FB7282222D8494C40041E9A2 /* ComposerTableViewCell.swift */,
-				FB8DB3712D7F77F60093DFCB /* ScoreTableViewControllerD.swift */,
-				FB8DB3782D81EFC00093DFCB /* ScoreDetailTableViewController.swift */,
-				FB5D773A2D8320D900812FAC /* TracksTableView.swift */,
-				FB72821C2D83B5290041E9A2 /* FavoritesCollectionViewController.swift */,
-				FB72821E2D83B7430041E9A2 /* FavoritesCollectionViewCell.swift */,
-				FB7282282D852EFB0041E9A2 /* ScoreTableViewCell.swift */,
+				FB72822F2D8608EC0041E9A2 /* Storyboards */,
+				FB72822E2D8608A90041E9A2 /* ViewControllers */,
+				FB7282302D8609120041E9A2 /* ViewCells */,
 				FB8DB36E2D7F71AD0093DFCB /* Logic */,
 				FB8DB3632D7F6E520093DFCB /* Repository */,
 				FB8DB3602D7F6B5B0093DFCB /* Model */,

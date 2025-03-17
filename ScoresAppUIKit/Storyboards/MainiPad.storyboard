@@ -31,7 +31,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6EX-m7-aKn">
-                                <rect key="frame" x="614" y="159" width="90" height="90"/>
+                                <rect key="frame" x="614" y="158.5" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="u5X-Qa-9HH"/>
                                     <constraint firstAttribute="height" constant="90" id="u6C-dl-I3k"/>
@@ -43,47 +43,47 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRb-BI-Ldm">
-                                <rect key="frame" x="20" y="88" width="684" height="20.5"/>
+                                <rect key="frame" x="20" y="88" width="85.5" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-rv-f6T">
-                                <rect key="frame" x="20" y="159" width="586" height="20.5"/>
+                                <rect key="frame" x="20" y="158.5" width="82.5" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5IU-La-aSP">
-                                <rect key="frame" x="20" y="229.5" width="586" height="62.5"/>
+                                <rect key="frame" x="20" y="229" width="684" height="62.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-cW-gg1">
-                                        <rect key="frame" x="0.0" y="0.0" width="289" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riC-kJ-i9i">
-                                                <rect key="frame" x="0.0" y="0.0" width="289" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="338" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w81-c7-Ubn">
-                                                <rect key="frame" x="0.0" y="28.5" width="289" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.5" width="338" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b0N-QL-buf">
-                                        <rect key="frame" x="297" y="0.0" width="289" height="62.5"/>
+                                        <rect key="frame" x="346" y="0.0" width="338" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhF-Lz-6tp">
-                                                <rect key="frame" x="0.0" y="0.0" width="289" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="338" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0a-ch-A1b">
-                                                <rect key="frame" x="0.0" y="28.5" width="289" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.5" width="338" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -92,12 +92,12 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-xf-NwW">
-                                <rect key="frame" x="20" y="117" width="684" height="34"/>
+                                <rect key="frame" x="20" y="116.5" width="684" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jt1-3N-RnD">
-                                <rect key="frame" x="20" y="187.5" width="586" height="34"/>
+                                <rect key="frame" x="20" y="187" width="586" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -108,23 +108,22 @@
                             <constraint firstItem="jt1-3N-RnD" firstAttribute="leading" secondItem="ZRb-BI-Ldm" secondAttribute="leading" id="1Kw-Ck-Zx4"/>
                             <constraint firstItem="8hU-fW-41Q" firstAttribute="trailing" secondItem="V0e-gp-p2Q" secondAttribute="trailing" constant="20" id="2AG-0U-xYM"/>
                             <constraint firstItem="ihb-rv-f6T" firstAttribute="leading" secondItem="ZRb-BI-Ldm" secondAttribute="leading" id="3hg-wL-hmZ"/>
-                            <constraint firstItem="7Za-xf-NwW" firstAttribute="top" secondItem="ZRb-BI-Ldm" secondAttribute="bottom" constant="8.5" id="4bt-As-bdb"/>
+                            <constraint firstItem="7Za-xf-NwW" firstAttribute="top" secondItem="ZRb-BI-Ldm" secondAttribute="bottom" constant="8" symbolic="YES" id="4bt-As-bdb"/>
                             <constraint firstItem="jt1-3N-RnD" firstAttribute="top" secondItem="ihb-rv-f6T" secondAttribute="bottom" constant="8" symbolic="YES" id="9it-3J-3fV"/>
                             <constraint firstItem="6EX-m7-aKn" firstAttribute="leading" secondItem="jt1-3N-RnD" secondAttribute="trailing" constant="8" symbolic="YES" id="AFo-IW-vmC"/>
                             <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" secondItem="6EX-m7-aKn" secondAttribute="trailing" constant="8" symbolic="YES" id="AsW-aC-M9D"/>
                             <constraint firstItem="riC-kJ-i9i" firstAttribute="leading" secondItem="ihb-rv-f6T" secondAttribute="leading" id="Bt0-rA-hbj"/>
                             <constraint firstItem="ZRb-BI-Ldm" firstAttribute="top" secondItem="8hU-fW-41Q" secondAttribute="top" id="Eit-oQ-z4g"/>
                             <constraint firstItem="6EX-m7-aKn" firstAttribute="top" secondItem="7Za-xf-NwW" secondAttribute="bottom" constant="8" symbolic="YES" id="GZZ-te-uz4"/>
-                            <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" secondItem="5IU-La-aSP" secondAttribute="trailing" constant="106" id="K3x-mh-vVW"/>
-                            <constraint firstItem="5IU-La-aSP" firstAttribute="leading" secondItem="8hU-fW-41Q" secondAttribute="leading" constant="20" id="LLN-vm-ViK"/>
+                            <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" secondItem="5IU-La-aSP" secondAttribute="trailing" constant="8" symbolic="YES" id="K3x-mh-vVW"/>
                             <constraint firstItem="V0e-gp-p2Q" firstAttribute="top" secondItem="8hU-fW-41Q" secondAttribute="top" id="O7Z-R5-ZnO"/>
-                            <constraint firstItem="6EX-m7-aKn" firstAttribute="leading" secondItem="ihb-rv-f6T" secondAttribute="trailing" constant="8" symbolic="YES" id="RVd-iZ-MEw"/>
+                            <constraint firstItem="6EX-m7-aKn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ihb-rv-f6T" secondAttribute="trailing" constant="8" symbolic="YES" id="RVd-iZ-MEw"/>
                             <constraint firstItem="7Za-xf-NwW" firstAttribute="leading" secondItem="ZRb-BI-Ldm" secondAttribute="leading" id="akF-fJ-CUc"/>
                             <constraint firstItem="ZRb-BI-Ldm" firstAttribute="leading" secondItem="8hU-fW-41Q" secondAttribute="leading" constant="20" id="hov-9y-DEv"/>
                             <constraint firstItem="ihb-rv-f6T" firstAttribute="top" secondItem="7Za-xf-NwW" secondAttribute="bottom" constant="8" symbolic="YES" id="izk-ow-8Za"/>
                             <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" secondItem="7Za-xf-NwW" secondAttribute="trailing" constant="8" symbolic="YES" id="mzP-FF-S9y"/>
                             <constraint firstItem="5IU-La-aSP" firstAttribute="leading" secondItem="ZRb-BI-Ldm" secondAttribute="leading" id="oQN-3a-ajR"/>
-                            <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" secondItem="ZRb-BI-Ldm" secondAttribute="trailing" constant="8" symbolic="YES" id="rUA-YJ-v5X"/>
+                            <constraint firstItem="V0e-gp-p2Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZRb-BI-Ldm" secondAttribute="trailing" constant="8" symbolic="YES" id="rUA-YJ-v5X"/>
                             <constraint firstItem="5IU-La-aSP" firstAttribute="top" secondItem="jt1-3N-RnD" secondAttribute="bottom" constant="8" symbolic="YES" id="yue-tx-Okh"/>
                         </constraints>
                     </view>
@@ -376,6 +375,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FcO-XJ-JMw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yhY-NB-Xwe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
